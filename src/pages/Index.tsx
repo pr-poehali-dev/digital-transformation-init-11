@@ -11,8 +11,8 @@ export default function Index() {
       <PartnersSection />
       <FeaturesSection />
       <footer className="py-8 text-center text-sm text-gray-400">
-        Более 50 000 транзакций в сутки · Комиссия от 0.5% · Вывод на следующий день —{" "}
-        <span className="font-medium text-white">начните зарабатывать уже сегодня.</span>
+        Более 300 успешных корпоративных туров · Комиссия 5–15% · Работаем по всей России —{" "}
+        <span className="font-medium text-white">оставьте заявку и получите подборку за 24 часа.</span>
       </footer>
     </main>
   )

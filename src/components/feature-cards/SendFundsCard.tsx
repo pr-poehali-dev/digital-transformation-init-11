@@ -1,4 +1,4 @@
-import { Zap, Building2, ChevronDown, Info } from "lucide-react"
+import { BadgePercent, Building2, ChevronDown, Info } from "lucide-react"
 import { Switch } from "@/components/ui/switch"
 import { ArrowUpRight } from "lucide-react"
 
@@ -6,11 +6,11 @@ export function SendFundsCard() {
   return (
     <div className="rounded-2xl bg-[#141414] border border-[#262626] p-6 flex flex-col">
       <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-[#1f1f1f] border border-[#2a2a2a]">
-        <Zap className="h-5 w-5 text-gray-400" />
+        <BadgePercent className="h-5 w-5 text-gray-400" />
       </div>
 
-      <h3 className="mb-2 text-lg font-semibold text-white">Быстрый вывод средств</h3>
-      <p className="mb-4 text-sm text-gray-400">Выводите прибыль на расчётный счёт уже на следующий рабочий день без задержек</p>
+      <h3 className="mb-2 text-lg font-semibold text-white">Ваш заработок с каждой сделки</h3>
+      <p className="mb-4 text-sm text-gray-400">Получайте комиссию за каждый успешно подобранный тур — от 5% до 15% от стоимости</p>
 
       <a href="#" className="mb-6 inline-flex items-center text-sm text-gray-400 hover:text-white transition-colors">
         Подробнее <ArrowUpRight className="ml-1 h-4 w-4" />
@@ -21,8 +21,8 @@ export function SendFundsCard() {
           <div className="flex items-center gap-3">
             <Building2 className="h-5 w-5 text-gray-500" />
             <div>
-              <p className="text-sm font-medium text-white">Расчётный счёт</p>
-              <p className="text-xs text-gray-500">Доступно к выводу: 1 500 000 ₽</p>
+              <p className="text-sm font-medium text-white">Закрытых сделок в этом месяце</p>
+              <p className="text-xs text-gray-500">Заработано: 47 800 ₽</p>
             </div>
           </div>
           <ChevronDown className="h-4 w-4 text-gray-500" />
@@ -30,7 +30,7 @@ export function SendFundsCard() {
 
         <div>
           <label className="mb-2 flex items-center gap-1 text-xs text-gray-400">
-            Сумма вывода <Info className="h-3 w-3" />
+            Стоимость тура <Info className="h-3 w-3" />
           </label>
           <div className="flex items-center rounded-lg bg-[#0f0f0f] border border-[#262626] px-3 py-2.5">
             <span className="text-gray-500 mr-2">₽</span>
@@ -44,11 +44,11 @@ export function SendFundsCard() {
 
         <div>
           <label className="mb-2 flex items-center gap-1 text-xs text-gray-400">
-            Комментарий <span className="text-violet-400">*</span> (Необязательно)
+            Ваша комиссия <span className="text-violet-400">*</span>
           </label>
           <div className="relative">
             <textarea
-              placeholder="Назначение вывода..."
+              placeholder="Опишите условия для клиента..."
               className="w-full rounded-lg bg-[#0f0f0f] border border-[#262626] px-3 py-2.5 text-sm text-white placeholder-gray-600 outline-none resize-none h-16"
             />
             <span className="absolute bottom-2 right-2 text-xs text-gray-600">0/200</span>
@@ -57,7 +57,7 @@ export function SendFundsCard() {
 
         <div className="flex items-center justify-between pt-2">
           <Switch className="data-[state=checked]:bg-violet-600" />
-          <span className="text-sm text-gray-400">Автовывод каждую пятницу</span>
+          <span className="text-sm text-gray-400">Уведомлять о новых заявках</span>
         </div>
       </div>
     </div>
