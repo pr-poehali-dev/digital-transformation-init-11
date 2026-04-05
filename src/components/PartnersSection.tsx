@@ -1,13 +1,13 @@
 import { Sparkles, Sun, Diamond, Bird, Activity, Zap, Circle } from "lucide-react"
 
 const partners = [
-  { name: "Синергия", icon: Sparkles },
-  { name: "Горизонт", icon: Sun },
-  { name: "Катализ", icon: Diamond },
-  { name: "Феникс", icon: Bird },
-  { name: "Пульс", icon: Activity },
-  { name: "Солярис", icon: Zap },
-  { name: "Аврора", icon: Circle },
+  { name: "Тинькофф", icon: Sparkles },
+  { name: "Сбербанк", icon: Sun },
+  { name: "Альфа-Банк", icon: Diamond },
+  { name: "ВТБ", icon: Bird },
+  { name: "Газпромбанк", icon: Activity },
+  { name: "Райффайзен", icon: Zap },
+  { name: "Открытие", icon: Circle },
 ]
 
 export function PartnersSection() {
